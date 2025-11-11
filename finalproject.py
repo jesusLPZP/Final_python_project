@@ -12,15 +12,8 @@ while total == "":
         score += 1
         print("Correct! Next Quetsion")
         total = ""
-        number1 = random.randint(1, a)
-        number2 = random.randint(1, a)
-        total = number1 * number2
-        print ("What is", number1, "times", number2, "?")
-        answer = int(input("Your answer: "))
-        print("Correct! Next Question")
-        total = ""
+        
     else:
         print("Incorrect. The correct answer is", total)
         print("You got ", score , "questions correct.")
-        # Reset total to continue the loop
     
