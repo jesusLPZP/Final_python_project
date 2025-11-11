@@ -17,6 +17,7 @@ while total == "":
         total = number1 * number2
         print ("What is", number1, "times", number2, "?")
         answer = int(input("Your answer: "))
+        print("Correct! Next Question")
         total = ""
     else:
         print("Incorrect. The correct answer is", total)
