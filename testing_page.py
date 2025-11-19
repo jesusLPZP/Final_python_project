@@ -1,5 +1,10 @@
 import random
 import time
+#user inputs a number value of their choice ofor the range of questions they would like to have them be asked 
+a = int(input("Enter a number to be the range of the questions: "))
+#thinking about adding motivational quotes at the end of the quiz - working on it
+motivational_quotes = []
+#defining the function for the multiplication quiz
 def multiplication_quiz():
     a = int(input("Enter a number to be the range of the questions: "))
     score = 0
@@ -26,4 +31,13 @@ def multiplication_quiz():
             print(f"You got {score} questions correct.")
             print(f"Average correct answers per minute: {average_per_minute:.2f}")
             break
-
+#when the user types in a number value grater than , the quiz will begin
+while a >= 0:
+    multiplication_quiz()
+    #when the quiz ends, the user will be prompted to play again or not
+    userinput = input("Do you want to play again? (yes/no)")
+#if typed in yes it will 
+    if userinput == "yes" or userinput =="Yes" or userinput =="y" or userinput ==("Y"):
+        multiplication_quiz()
+    else:
+        print(motivational_quotes)
