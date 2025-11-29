@@ -3,7 +3,11 @@ import time
 #user inputs a number value of their choice ofor the range of questions they would like to have them be asked 
 a = int(input("Enter a number to be the range of the questions: "))
 #thinking about adding motivational quotes at the end of the quiz - working on it
-motivational_quotes = []
+motivational_quotes = ["Great job! Keep practicing to improve your skills!",
+                       "Well done! Every mistake is a step towards mastery.",
+                       "Fantastic effort! You're getting better with each question.",
+                       "Keep it up! Practice makes perfect.",
+                       "You're doing amazing! Stay focused and keep learning."]
 #defining the function for the multiplication quiz
 def multiplication_quiz():
     a = int(input("Enter a number to be the range of the questions: "))
@@ -38,6 +42,6 @@ while a >= 0:
     userinput = input("Do you want to play again? (yes/no)")
 #if typed in yes it will 
     if userinput == "yes" or userinput =="Yes" or userinput =="y" or userinput ==("Y"):
-        multiplication_quiz()
+        print(multiplication_quiz())
     else:
-        print(motivational_quotes)
+        print(random(motivational_quotes))

@@ -22,3 +22,5 @@ while total == "":
         print("You got ", score , "questions correct.") 
         #gotta work on this part, either to fix or remove it
         #try to focus on average score per second or if i cant change it to per minute
+
+        
