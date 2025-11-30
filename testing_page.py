@@ -8,7 +8,7 @@ motivational_quotes = ["Great job! Keep practicing to improve your skills!",
                        "Fantastic effort! You're getting better with each question.",
                        "Keep it up! Practice makes perfect.",
                        "You're doing amazing! Stay focused and keep learning."]
-#defining the function for the multiplication quiz
+#defining the function for the multiplication quiz, being able to replay if the user decides to 
 def multiplication_quiz():
     a = int(input("Enter a number to be the range of the questions: "))
     score = 0
@@ -25,6 +25,7 @@ def multiplication_quiz():
         if answer == total:
             score += 1
             print("Correct! Next Question\n")
+            #the else statement was important to end the function of the quiz to be able to rerun it whne typed a wrong question
         else:
             end_time = time.time()
             elapsed_time = end_time - start_time
