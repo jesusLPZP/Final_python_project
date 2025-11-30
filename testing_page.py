@@ -35,13 +35,12 @@ def multiplication_quiz():
             print(f"You got {score} questions correct.")
             print(f"Average correct answers per minute: {average_per_minute:.2f}")
             break
-#when the user types in a number value grater than , the quiz will begin
-while a >= 0:
+# this loop will continue the program until the user decides to type anything other than yes or y
+while True:
     multiplication_quiz()
-    #when the quiz ends, the user will be prompted to play again or not
-    userinput = input("Do you want to play again? (yes/no)")
-#if typed in yes it will 
-    if userinput == "yes" or userinput =="Yes" or userinput =="y" or userinput ==("Y"):
-        print(multiplication_quiz())
-    else:
-        print(random(motivational_quotes))
+    userinput = input("Do you want to play again? (yes/no): ")
+    #will print a motivbational quote if the user decides not to play again
+    if userinput not in ["yes", "y"]:
+        print(random.choice(motivational_quotes))
+        print("Thanks for playing!")
+        break
